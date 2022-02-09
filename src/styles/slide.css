@@ -131,6 +131,47 @@
     }
   }
 
+  &--pricing {
+    background-color: rgba(78, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    font-family: $headers-font;
+    padding: 24px 70px 20px 60px;
+
+    &--header {
+      display: grid;
+      column-gap: 16px;
+      grid-template-columns: repeat(3, minmax(min-content, 1fr));
+      border-bottom: 1px solid $red;
+      text-align: start;
+      padding-bottom: 24px;
+
+      &--title  {
+        /* border: 1px solid blue; */
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+    }
+
+    &--body {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(min-content, 1fr));
+      column-gap: 16px;
+      row-gap: 24px;
+      border-bottom: 1px solid $red;
+      padding-bottom: 24px;
+
+      &--text {
+        /* border: 1px solid green; */
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+
+      }
+    }
+  }
+
   &--text {
     margin: 36px 0;
 

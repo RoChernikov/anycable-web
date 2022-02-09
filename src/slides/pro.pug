@@ -44,12 +44,63 @@
             span.btn--text Read more
             span.btn--icon
               include /images/arrow-right.svg
-      .slide--text
-        | Free trial: 
-        span.pro--price 2 months
-        br
-        | One year subscription: 
-        span.pro--price $1,999
+      //- .slide--text
+      //-   | Free trial: 
+      //-   span.pro--price 2 months
+      //-   br
+      //-   | One year subscription: 
+      //-   span.pro--price $1,999
+      //- .pro-form.js-form.contact-form
+      //-   form.form.gtm-form#pro-form(action=proFormUrl, method="post", data-gtm-category="landingForm", data-gtm-action="formProSend")
+      //-     .form--honeypot
+      //-       input(type="text", name="name", id="name", placeholder="Your name", aria-label="Your name", autocomplete="nope", tabindex="-1")
+      //-     .form--controls
+      //-       .form--control
+      //-         input(type="text", name="email", placeholder="Your email", aria-label="Your email", required)
+      //-       .form--control
+      //-         button.btn.light(type="submit", disabled)
+      //-           span.btn--text Send
+      //-     .form--error.error.small-text.white-text Something went wrong :(
+      //-   .slide--text.message
+      //-     | Thanks for reaching out! Please continue in TypeForm.
+
+      //- .slide--text.small-text
+      //-   | Check out 
+      //-   a.gtm-link(href="https://anycable.io/case-studies/callbell/", target="_blank", data-gtm-category="landingLink", data-gtm-action="proCallbellCaseStudy", rel="noreferrer noopener") a case study
+      //-   |  on the very first AnyCable Pro launching into production with the Callbell project.
+    .slide--pricing
+      .slide--pricing--header
+        p.slide--pricing--header--title
+            | Plan
+        p.slide--pricing--header--title
+            | Support
+        p.slide--pricing--header--title
+            | Price
+      .slide--pricing--body
+        p.slide--pricing--body--text
+          | Open source
+        p.slide--pricing--body--text
+          | Support on GitHub
+        p.slide--pricing--body--text
+          | 🎉 Free
+        p.slide--pricing--body--text
+          | Basic
+        p.slide--pricing--body--text
+          | Priority support on GitHub
+        p.slide--pricing--body--text
+          | $590/year
+        p.slide--pricing--body--text
+          | Standard
+        p.slide--pricing--body--text
+          | Dedicated support via Slack
+        p.slide--pricing--body--text
+          | $1,490/year
+        p.slide--pricing--body--text
+          | Enterprise
+        p.slide--pricing--body--text
+          | Top priority support, custom solutions, and deployment & monitoring help.
+        p.slide--pricing--body--text
+          | 🔥 Contact us
       .pro-form.js-form.contact-form
         form.form.gtm-form#pro-form(action=proFormUrl, method="post", data-gtm-category="landingForm", data-gtm-action="formProSend")
           .form--honeypot
@@ -59,12 +110,5 @@
               input(type="text", name="email", placeholder="Your email", aria-label="Your email", required)
             .form--control
               button.btn.light(type="submit", disabled)
-                span.btn--text Send
+                span.btn--text Get pro
           .form--error.error.small-text.white-text Something went wrong :(
-        .slide--text.message
-          | Thanks for reaching out! Please continue in TypeForm.
-
-      .slide--text.small-text
-        | Check out 
-        a.gtm-link(href="https://anycable.io/case-studies/callbell/", target="_blank", data-gtm-category="landingLink", data-gtm-action="proCallbellCaseStudy", rel="noreferrer noopener") a case study
-        |  on the very first AnyCable Pro launching into production with the Callbell project.

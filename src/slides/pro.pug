@@ -51,37 +51,39 @@
         | We have three annual plans for AnyCable Pro: Basic, Advanced, and Enterprise, and they all include an unlimited number of instances. Every plan starts with a 2-month free trial.
     .slide--pricing
       .slide--pricing--header
-        p.slide--pricing--header--title
+        p.slide--pricing--header--title.mobile-hide
             | Plan
-        p.slide--pricing--header--title
+        p.slide--pricing--header--title.mobile-hide
             | Support
+        p.slide--pricing--header--title.mobile-show
+            | Plan and Support
         p.slide--pricing--header--title
             | Price
       .slide--pricing--body
-        p.slide--pricing--body--item
+        p.slide--pricing--body--item.first-column
           | Open source
-        p.slide--pricing--body--item
+        p.slide--pricing--body--item.first-column.support
           | Support on GitHub
-        p.slide--pricing--body--item
+        p.slide--pricing--body--item.second-column
           | 🎉 Free
-        p.slide--pricing--body--item
+        p.slide--pricing--body--item.first-column
           | Basic
-        p.slide--pricing--body--item
+        p.slide--pricing--body--item.first-column.support
           | Priority support on GitHub
-        p.slide--pricing--body--item
+        p.slide--pricing--body--item.second-column
           span.slide--pricing--body--price $590/year
-        p.slide--pricing--body--item
+        p.slide--pricing--body--item.first-column
           | Standard
-        p.slide--pricing--body--item
+        p.slide--pricing--body--item.first-column.support
           | Dedicated support via Slack
-        p.slide--pricing--body--item
+        p.slide--pricing--body--item.second-column
           span.slide--pricing--body--price $1,490/year
-        p.slide--pricing--body--item
+        p.slide--pricing--body--item.first-column
           | Enterprise
-        p.slide--pricing--body--item
+        p.slide--pricing--body--item.first-column.support
           | Top priority support, custom solutions, and deployment & monitoring help.
-        p.slide--pricing--body--item
-          | 🔥 Contact us
+        p.slide--pricing--body--item.second-column
+          | 🔥&nbsp;Contact&nbsp;us
       .slide--pricing--footer
         .pro-form.js-form.contact-form
           form.form.gtm-form#pro-form(action=proFormUrl, method="post", data-gtm-category="landingForm", data-gtm-action="formProSend")

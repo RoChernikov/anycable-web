@@ -31,6 +31,10 @@
     }
   }
 
+  &--title.red {
+    padding-top: 0;
+  }
+
   &.red {
     background-color: $red;
     padding-top: 80px;
@@ -246,6 +250,19 @@
             & {
               grid-column: 2/3;
               justify-self: end;
+            }
+            /* One of the solutions to the problem of price tag positioning is to use a unique class for each */
+            &.price-1 {
+              grid-row: 1;
+            }
+            &.price-2 {
+              grid-row: 3;
+            }
+            &.price-3 {
+              grid-row: 5;
+            }
+            &.price-4 {
+              grid-row: 7;
             }
           }
         }
@@ -541,8 +558,8 @@
       margin-top: 0;
 
       h2 {
-        padding-top: 40px;
         background-image: $fade_gradient_bottom;
+        padding-top: 40px;
 
         &.with-images {
           margin: 0 -10vw;
@@ -574,11 +591,13 @@
     }
 
     &--content > * {
-      padding: 0 10%;
+      padding: 0 7.5%;
     }
 
     &--image {
       text-align: center;
+      transform: translate(-20px);
+      padding: 33px 0 48px 0;
 
       svg {
         width: 70vw;

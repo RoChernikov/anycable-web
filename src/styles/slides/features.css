@@ -77,4 +77,10 @@
 .features--footer {
   padding-bottom: 18px;
   display: inline-block;
+
+  @media (--mobile) {
+    & {
+      padding-bottom: 0;
+    }
+  }
 }

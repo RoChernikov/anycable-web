@@ -8,12 +8,12 @@
         include /images/logo-pro.svg
   .slide--item.red
     .slide--content.js-animation-hook(data-frame="frame-4")
-      h2#opensource
+      .slide--image.mobile-only
+        include /images/logo-pro.svg
+      h2#opensource.slide--title.red
         | Get your PRO version
       p.slide--text.red
         | Get even more resource efficiency at scale, improve DX, and get priority support by switching to the PRO version of AnyCable.
-      .slide--image.mobile-only
-        include /images/logo-pro.svg
       p.features--title
         | PRO includes additional features:
       .features--list
@@ -64,25 +64,25 @@
           | Open source
         p.slide--pricing--body--item.first-column.support
           | Support on GitHub
-        p.slide--pricing--body--item.second-column
+        p.slide--pricing--body--item.second-column.price-1
           | 🎉 Free
         p.slide--pricing--body--item.first-column
           | Basic
         p.slide--pricing--body--item.first-column.support
           | Priority support on GitHub
-        p.slide--pricing--body--item.second-column
+        p.slide--pricing--body--item.second-column.price-2
           span.slide--pricing--body--price $590/year
         p.slide--pricing--body--item.first-column
           | Standard
         p.slide--pricing--body--item.first-column.support
           | Dedicated support via Slack
-        p.slide--pricing--body--item.second-column
+        p.slide--pricing--body--item.second-column.price-3
           span.slide--pricing--body--price $1,490/year
         p.slide--pricing--body--item.first-column
           | Enterprise
         p.slide--pricing--body--item.first-column.support
           | Top priority support, custom solutions, and deployment & monitoring help.
-        p.slide--pricing--body--item.second-column
+        p.slide--pricing--body--item.second-column.price-4
           | 🔥&nbsp;Contact&nbsp;us
       .slide--pricing--footer
         .pro-form.js-form.contact-form
